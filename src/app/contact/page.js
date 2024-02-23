@@ -2,6 +2,10 @@ import React from 'react'
 import Banner from '../components/Banner'
 import Link from 'next/link'
 
+export const metadata = {
+  title: "Contact | Helpende",
+};
+
 const Contact = () => {
   return (
     <>
