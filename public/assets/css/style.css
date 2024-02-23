@@ -249,3 +249,6 @@ button.navbar-toggler {
     outline: none!important;
     box-shadow: none!important;
 }
+.dropdown-toggle::after{
+    margin-left: 0.55rem;
+}
