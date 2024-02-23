@@ -1,0 +1,248 @@
+/* @import url(https://db.onlinewebfonts.com/c/0aa01864c2b5935b7c320ab8cef84802?family=Eurostile-Medium); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "Eurostile-Medium"; */
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: rgb(255 255 255 / 83%);
+    letter-spacing: 1px !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #fff;
+}
+
+.banner {
+    background-image: url('../img/header_back3.jpg');
+    width: 100%;
+    /* height:100vh; */
+    min-height: 500px;
+    max-height: 550px;
+    background-size: cover;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    position: relative;
+    border-image-source: linear-gradient(to right, #823eae, #0a68cc, #0081c9, #0092b2, #009d96, yellow, yellow, #56bc45, #7fcb39, #7fcb39, #56bc45, #823eae);
+}
+
+.banner.content {
+    min-height: 410px;
+    max-height: 410px;
+}
+
+.nav-bg-c {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background: #3376a061;
+    z-index: 99;
+}
+
+.globe-cnt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    z-index: 1;
+    padding-top: 100px;
+}
+
+.behandeling {
+    width: 100%;
+    background: url(../img/vlekken.png) #2baebf;
+    background-size: 100%;
+    background-position: 0;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.behandeling h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+a.blok {
+    padding: 60px 35px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.overhelpende {
+    width: 100%;
+    height: auto;
+    background: url(../img/back_bottom.png) center bottom #dae4b4;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: left;
+}
+
+.overhelpende h1 {
+    color: #25945a;
+    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.overhelpende p {
+    max-width: 650px;
+}
+
+.overhelpende a {
+    color: gray;
+    text-decoration: none;
+}
+
+.footer {
+    background: url(../img/footer_back_bottom.png), url(../img/footer_back2.png);
+    background-position: bottom, center top;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 255px;
+    position: relative;
+    z-index: 1000;
+    margin-top: -60px;
+    float: left;
+}
+
+.f-detials {
+    /* width: 205px; */
+    position: relative;
+    bottom: 20px;
+    float: left;
+    margin-top: 118px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.content-page {
+    width: 100%;
+    height: 100%;
+    background: url(../img/back_bottom.png) center bottom #e8eed1;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /* float: left; */
+    background-size: cover;
+}
+
+.content-page h2 {
+    color: #25945a;
+    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.content-page h5 {
+    font-weight: 600;
+    color: gray;
+}
+
+.right-img img {
+    box-shadow: 0px 0px 24px -2px rgba(112, 108, 112, 1);
+    margin-bottom: 30px;
+}
+
+.google-rank {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background: #fff;
+    border-radius: 10px;
+    justify-content: space-between;
+    max-width: 610px;
+}
+
+.google-rank a,
+.VERZENDEN {
+    padding: 3px 10px;
+    background-color: #0081c9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .nav-bg-c {
+        background: #3376a0;
+        z-index: 99;
+    }
+
+    .footer {
+        background-color: #00899f;
+        height: 100%;
+        background-image: none;
+    }
+
+    .f-detials {
+        margin-top: 35px;
+    }
+
+    .first-f-c {
+        padding-top: 35px;
+    }
+
+    .copyright {
+        padding-bottom: 14px;
+        margin-top: 0px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-brand img {
+        width: 200px;
+    }
+}
+
+.globe-cnt h3 {
+    display: block;
+}
+
+.globe-cnt h3 span {
+    display: block;
+}
+
+.globe-cnt h3 span.ps-10 {
+    padding-left: 5rem !important;
+}
+
+li.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-close-icon {
+    background-image: url(../img/xmark-solid.svg);
+}
+button.navbar-toggler {
+    outline: none!important;
+    box-shadow: none!important;
+}

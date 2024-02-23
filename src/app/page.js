@@ -1,95 +1,71 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className="banner">
+        <div className="container">
+          <div className="globe-cnt">
+            <div className="row align-items-center">
+              <div className="col-lg-8 col-sm-12">
+                <h3 className="text-white">“You cannot teach
+                  <span className="ps-5 ps-10">a person anything,</span>
+                  <span className="ps-4">you can only help them </span>
+                  <span className="ps-5">find it within themselves”</span>
+                </h3>
+              </div>
+              <div className="col-lg-4 d-none d-xl-block">
+                <img src="./assets/img/bol_groot.png" width="318" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="behandeling">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <Link href="holischtische-massage.php" className="blok">
+                <img src="./assets/img/beeldmerk.png" alt="" />
+                <h2>Behandeling 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia el.</p>
+              </Link>
+            </div>
+            <div className="col-lg-4">
+              <Link href="retreat.php" className="blok" style={{ background: '#ffffff4d' }}>
+                <img src="./assets/img/beeldmerk.png" alt="" />
+                <h2>Behandeling 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia el.</p>
+              </Link>
+            </div>
+            <div className="col-lg-4">
+              <Link href="reviews.php" className="blok">
+                <img src="./assets/img/beeldmerk.png" alt="" />
+                <h2>Behandeling 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia el.</p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <section className="overhelpende">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-4 text-center">
+              <img src="./assets/img/bol_groot.png" width="318" alt="" />
+            </div>
+            <div className="col-lg-8 mt-4 mt-lg-0 mb-5 mb-lg-0">
+              <h1>Over Helpende Handen</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa sit eaque tenetur
+                debitis repudiandae numquam illum reiciendis aspernatur quasi consequatur similique deserunt nam
+                maiores fuga molestiae, nobis dolor adipisci unde laudantium? Explicabo, voluptates totam!</p>
+              <Link href="over-mij.php">Lees meer <img src="./assets/img/angles-right-solid.svg" alt="" style={{ width: '14px', filter: ' opacity(0.5)' }} /></Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
