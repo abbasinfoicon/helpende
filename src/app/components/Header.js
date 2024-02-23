@@ -18,10 +18,10 @@ const Header = () => {
                     </Link>
 
                     <button className="navbar-toggler" onClick={handleToggle}>
-                        <span class={`navbar-toggler-icon ${show ? 'navbar-close-icon' : ''}`}></span>
+                        <span className={`navbar-toggler-icon ${show ? 'navbar-close-icon' : ''}`}></span>
                     </button>
 
-                    <div class={`collapse navbar-collapse ${show ? 'show' : ''}`}>
+                    <div className={`collapse navbar-collapse ${show ? 'show' : ''}`}>
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0 w-100 justify-content-end">
                             <li className="nav-item">
                                 <Link className="nav-link active" ariaCurrent="page" href="/">Home</Link>
