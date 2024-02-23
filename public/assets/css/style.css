@@ -109,6 +109,9 @@ a.blok {
     color: gray;
     text-decoration: none;
 }
+.overhelpende a:hover {
+    color: #1f814d;
+}
 
 .footer {
     background: url(../img/footer_back_bottom.png), url(../img/footer_back2.png);
