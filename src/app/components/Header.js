@@ -4,11 +4,9 @@ import React, { useState } from 'react'
 
 const Header = () => {
     const [show, setShow] = useState(false);
-
     const handleToggle = () => {
         setShow(!show)
     }
-
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark w-100 position-absolute p-0 nav-bg-c">
